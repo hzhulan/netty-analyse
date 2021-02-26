@@ -10,7 +10,7 @@ public class BasicBuffer {
         // 创建buffer, 大小为5
         IntBuffer buffer = IntBuffer.allocate(10);
         // 向buffer存放数据
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < buffer.capacity(); i++) {
             buffer.put(i * 2);
         }
         // 从buffer读取数据
