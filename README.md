@@ -28,5 +28,7 @@ buffer中最常用的为ByteBuffer,其中最常见的方法有如下：
 
 ### Selector
 ![avatar](src/main/resources/img/selector.png)
-其常用方法如下:
+#### 其常用方法如下:
 ![avatar](src/main/resources/img/selector-methods.png)
+#### selector及selectionKey等关系
+![avatar](src/main/resources/img/selector-componets.png)
