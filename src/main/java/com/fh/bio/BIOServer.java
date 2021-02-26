@@ -56,7 +56,7 @@ public class BIOServer {
             int read;
             while ((read = inputStream.read(bytes)) != -1) {
                 // 输出客户端发送的数据
-                System.out.println(String.format("[%s]%s", Thread.currentThread().getId(), new String(bytes, 0, read)));
+                System.out.println(String.format("[%s]%s", Thread.currentThread().getId(), new String(bytes, 0, read, "gbk")));
             }
         } catch (IOException e) {
             e.printStackTrace();
