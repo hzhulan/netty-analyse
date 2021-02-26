@@ -2,6 +2,9 @@ package com.fh.nio;
 
 import java.nio.IntBuffer;
 
+/**
+ * nio实现非阻塞的核心为Buffer，通过缓冲区缓冲，满了再用线程进行读写
+ */
 public class BasicBuffer {
     public static void main(String[] args) {
         // 创建buffer, 大小为5
