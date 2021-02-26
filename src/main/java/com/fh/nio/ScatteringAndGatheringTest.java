@@ -21,7 +21,7 @@ public class ScatteringAndGatheringTest {
 
             ByteBuffer[] byteBuffers = new ByteBuffer[2];
             byteBuffers[0] = ByteBuffer.allocate(5);
-            byteBuffers[0] = ByteBuffer.allocate(3);
+            byteBuffers[1] = ByteBuffer.allocate(3);
 
             // 等待客户端连接
             SocketChannel socketChannel = serverSocketChannel.accept();
