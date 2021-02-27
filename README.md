@@ -40,3 +40,10 @@ buffer中最常用的为ByteBuffer,其中最常见的方法有如下：
 #### NIO群聊
 服务端: com.fh.nio.GroupChatServer
 客户端: com.fh.nio.GroupChatClient
+
+## 3. 零拷贝
+零拷贝：没有CPU拷贝，但是还有DMA拷贝 
+DMA: Direct Memory Access(直接内存拷贝)
+![avatar](src/main/resources/img/copy.png)
+![avatar](src/main/resources/img/copy-difference.png)
+
