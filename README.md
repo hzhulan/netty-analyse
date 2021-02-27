@@ -32,3 +32,11 @@ buffer中最常用的为ByteBuffer,其中最常见的方法有如下：
 ![avatar](src/main/resources/img/selector-methods.png)
 #### selector及selectionKey等关系
 ![avatar](src/main/resources/img/selector-componets.png)
+
+#### NIOServer NIOClinet demo
+服务端: com.fh.nio.NIOServer
+客户端: com.fh.nio.NIOClient
+
+#### NIO群聊
+服务端: com.fh.nio.GroupChatServer
+客户端: com.fh.nio.GroupChatClient
