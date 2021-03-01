@@ -25,21 +25,23 @@ public class NewIOClient {
         long size = fileChannel.size();
 
         // 8M ==> bit数
-        long every = 8 * 1024 * 1024;
-
-//        long time = size/every + 1;
+//        long every = 8 * 1024 * 1024;
+//        long every = size;
 
         long transferCount = 0;
 
-//        while (transferCount < size) {
+        int count = 1;
+        while (transferCount < size) {
 //            long perTransferSize = transferCount + every <= size ? every : (size - transferCount);
-//            transferCount += fileChannel.transferTo(0, perTransferSize, socketChannel);
-//            System.out.println("============== 进行一次拷贝 =============");
-//        }
+            transferCount += fileChannel.transferTo(transferCount, size, socketChannel);
+            System.out.println(String.format("============== 进行%s次拷贝[%s/%s] =============", count++ ,transferCount, size));
+        }
 
-        transferCount += fileChannel.transferTo(0, size, socketChannel);
+//        transferCount += fileChannel.transferTo(0, size, socketChannel);
 
         System.out.println(String.format("发送总字节数:%s, 总耗时: %s", transferCount, (System.currentTimeMillis() - startTime)));
+
+        System.in.read();
 
         fileChannel.close();
         fis.close();

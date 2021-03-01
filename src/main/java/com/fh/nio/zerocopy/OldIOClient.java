@@ -3,10 +3,11 @@ package com.fh.nio.zerocopy;
 import java.io.*;
 import java.net.Socket;
 
-public class ZeroIOClient {
+public class OldIOClient {
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("localhost", 7001);
-        FileInputStream fis = new FileInputStream("target/32.zip");
+//        FileInputStream fis = new FileInputStream("target/32.zip");
+        FileInputStream fis = new FileInputStream("target/Archive.zip");
         DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
 
         byte[] buffer = new byte[4096];
