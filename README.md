@@ -54,5 +54,9 @@ Reactor(三种叫法：反应器模式、分发者模式Dispatcher、通知者�
 
 * 单Reactor单线程
 * 单Reactor多线程
+* 主从Reactor多线程
+
+pipline业务逻辑中阻塞的部分用taskQueue去异步处理
+
 
 
