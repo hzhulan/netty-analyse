@@ -45,5 +45,14 @@ buffer中最常用的为ByteBuffer,其中最常见的方法有如下：
 零拷贝：没有CPU拷贝，但是还有DMA拷贝 
 DMA: Direct Memory Access(直接内存拷贝)
 ![avatar](src/main/resources/img/copy.png)
-![avatar](src/main/resources/img/copy-difference.png)
+![avatar](src/main/resources/img/copy-difference.png
+
+## 4. netty
+模型
+传统阻塞模型
+Reactor(三种叫法：反应器模式、分发者模式Dispatcher、通知者模式notifier)
+
+* 单Reactor单线程
+* 单Reactor多线程
+
 
