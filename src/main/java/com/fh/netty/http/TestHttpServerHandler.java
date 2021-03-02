@@ -21,7 +21,7 @@ public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObjec
         if (msg instanceof HttpRequest) {
             System.out.println("msg类型: " + msg.getClass());
             System.out.println("客户端地址: " + channelHandlerContext.channel().remoteAddress());
-            System.out.println(String.format("handler: %s, pipline: %s", channelHandlerContext.handler().hashCode(), channelHandlerContext.pipeline().hashCode()));
+            System.out.println(String.format("channel: %s, handler: %s, pipline: %s", channelHandlerContext.channel().hashCode(), channelHandlerContext.handler().hashCode(), channelHandlerContext.pipeline().hashCode()));
 
             HttpRequest httpRequest = (HttpRequest) msg;
             URI uri = new URI(httpRequest.getUri());
