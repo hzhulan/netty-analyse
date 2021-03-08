@@ -5,6 +5,7 @@ import io.netty.util.NettyRuntime;
 public class NettyTest {
 
     public static void main(String[] args) {
+        // computer的核数
 //        System.out.println(NettyRuntime.availableProcessors());
 
         long time1 = 1614584186606L;
